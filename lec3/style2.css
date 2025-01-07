@@ -73,10 +73,11 @@ a {
     height: 57px;background-color: #3a68b8
 }
 .top__logos {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: center;
     justify-content: space-evenly;
+    align-items: stretch;
 }
 .top__info {
     width: 604px;
