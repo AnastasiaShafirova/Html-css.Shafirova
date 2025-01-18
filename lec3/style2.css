@@ -7,8 +7,8 @@ body {
   
 }
 .center {
-    padding-left: calc(50% - 580px);
-    padding-right: calc(50% - 580px);
+    padding-left: calc(50% - 573px);
+    padding-right: calc(50% - 573px);
 }
 a {
     text-decoration: none;
@@ -73,13 +73,20 @@ a {
     height: 57px;background-color: #3a68b8
 }
 .top__logos {
+    width: 1147px;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: stretch;
+    gap: 32px;
+    
 }
+
 .top__info {
     width: 604px;
     height: 415px;
+}
+@media (max-width: 1024px) {
+
 }
