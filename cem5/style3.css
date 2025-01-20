@@ -177,7 +177,7 @@ a {
 
 @media (max-width: 1024px) {
     .center {
-        padding: 0 calc(50% - 376px);
+        padding: 0 20px;
     }
 
     .header {
@@ -185,12 +185,16 @@ a {
         align-items: center;
         padding: 20px;
         display: flex;
+       justify-content: center;
     }
 
     .header__link1 {
         flex-direction: row;
         align-items: center;
         display: flex;
+        justify-content: center;
+        gap: 14px;
+        flex-wrap: wrap;
     }
 
     .top__content {
@@ -207,12 +211,13 @@ a {
         max-width: 556px;
         align-items: center;
         flex-direction: column;
+        text-align: center;
     }
 
     .content {
-        padding: 50px 20px;
+        padding: 20px;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         align-content: center;
     }
 
@@ -221,6 +226,12 @@ a {
         max-width: 310px;
         height: auto;
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+
     }
 
     .top__buttons {
@@ -232,5 +243,7 @@ a {
     .top__logos {
         gap: 20px;
         flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
     }
 }
