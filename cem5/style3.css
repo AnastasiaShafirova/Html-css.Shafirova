@@ -29,7 +29,7 @@ a {
     max-width: 1920px;
     padding: 40px;
     margin: auto;
-    gap: 460px;
+    gap: 46px;
 }
 
 .header img {
@@ -181,20 +181,22 @@ a {
     }
 
     .header {
+        display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 20px;
-        display: flex;
-       justify-content: center;
     }
 
     .header__link1 {
         flex-direction: row;
         align-items: center;
         display: flex;
-        justify-content: center;
-        gap: 14px;
+        gap: 1px;
         flex-wrap: wrap;
+    }
+    .logo__header {
+        max-width: 100px;
+        height: auto;
+        margin-right: 0;
     }
 
     .top__content {
