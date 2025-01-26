@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 .center {
     padding: 0 calc(50% - 960px);
 }
@@ -247,5 +251,32 @@ a {
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
+    }
+}
+@media (max-width: 767px) {
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+        }
+    .top__content {
+        width: 100%;
+    }
+    .text {
+        width: 100%;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .header__link1 {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+    .top__logos {
+        padding: 100px 0;
+        margin-bottom: 150px;
     }
 }
