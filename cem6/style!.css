@@ -1,0 +1,174 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #F1E4E6; 
+    max-width: 1600px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+.center {
+    padding: 0 calc(50% - 800px);
+}
+
+.top {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+.header {
+    width: 100%; 
+    background-color: #222; 
+    padding: 10px 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+    position: fixed; 
+    top: 0; 
+    z-index: 1000;
+    margin-bottom: 20px;
+}
+.top__content {
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    align-items: center;
+}
+
+.promo_container {
+    display: flex;
+    align-items: center;
+}
+
+.text__content_container {
+    display: flex;
+}
+.promo__img__photo {
+    width: 800px;
+}
+
+.stripe {
+    margin-right: 10px; 
+}
+
+.text__content {
+    display: flex; 
+    flex-direction: column;
+}
+.slogan {
+    font: 900 48px "Lato", sans-serif;
+    color: #222;
+}
+
+.desc {
+    font: 700 32px "Lato", sans-serif;
+}
+
+.subject {
+    font: 700 32px "Lato", sans-serif;
+    color: #f16d7f;
+}
+
+.offer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.offer-item {
+    position: relative; 
+    margin: 20px; 
+}
+
+.img__offer {
+    display: block; 
+}
+
+.tab {
+    position: absolute; 
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    text-align: center; 
+}
+
+.title {
+    font: 700 24px "Lato", sans-serif;
+    color: #f16d7f;
+}
+
+.subtitle {
+    font: 400 16px "Lato", sans-serif;
+    color: #fff;
+}
+.products__caption {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.desc2 {
+    font: 400 30px "Lato", sans-serif;
+    color: #222;
+}
+.desc3 {
+    font: 400 14px "Lato", sans-serif;
+    color: #9f9f9f;
+}
+.product__items {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: center;
+}
+.item__text {
+    font: 400 13px "Lato", sans-serif;
+    color: #000;
+}
+.item__head {
+    font: 300 14px "Lato", sans-serif;
+    color: #5d5d5d;
+}
+.item__price {
+    font: 400 16px "Lato", sans-serif;
+    color: #f16d7f;
+}
+.item {
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.button__item {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.button {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 212px; 
+    height: 48px; 
+    background-color: transparent; 
+    border: 2px solid #f16d7f; 
+    border-radius: 5px; 
+    color: #f16d7f; 
+    text-decoration: none;
+    font: 400 16px "Lato", sans-serif; 
+    transition: background-color 0.3s, color 0.3s; 
+    margin-bottom: 50px;
+}
