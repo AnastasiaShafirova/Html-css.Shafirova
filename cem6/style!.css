@@ -391,6 +391,39 @@ a {
         padding: 20px;                  
         text-align: center;            
     }
+    .possibilities {
+        height: 610px;
+        background-color: #222224;
+        max-height: 340px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding-top: 100px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+    .subscription {
+        max-height: 609px;
+        background-image: url(./img/subscribe.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 50px;
+        color: #222224;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .subscribe__info {
+        margin-bottom: 100px;
+    }
 }
 
 
