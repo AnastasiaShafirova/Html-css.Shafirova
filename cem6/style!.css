@@ -172,6 +172,104 @@ a {
     transition: background-color 0.3s, color 0.3s; 
     margin-bottom: 50px;
 }
+.possibilities {
+    background-color:  #222224;
+    max-height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 100px;
+}
+
+.title__possibilitles {
+    font: 400 19px "Lato", sans-serif;
+    color: #fbfbfb;
+}
+.text__possibilitles {
+    font: 300 13px "Lato", sans-serif;
+    text-align: center;
+    color: #fbfbfb;
+    margin-bottom: 100px;
+}
+.item__possibilitles {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subscription {
+    background-image: url(./img/subscribe.jpg);
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;   
+    padding: 50px;                 
+    color: #222224;  
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;              
+}
+.subscribe__text {
+    font: 400 20px "Lato", sans-serif;
+    text-align: center;
+    color: #222224;
+}
+.subscribe__text2 {
+    font: italic 400 20px "Lato", sans-serif;
+}
+.subscribe__info {
+    width: 359px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe__form {
+    width: 557px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__subscribe {
+    font: 700 24px / 1.672 "Lato", sans-serif;
+    text-align: center;
+    color: #222224;
+}
+.title__text__subscribe {
+    font: 400 18px / 1.672 "Lato", sans-serif;
+}
+.input__container {
+    display: flex;                     
+    align-items: center;              
+    width: 100%;                      
+    max-width: 300px;                 
+}
+.email__input {
+    flex: 1;                          
+    padding: 10px;                    
+    border: 1px solid #ccc;           
+    border-radius: 5px;               
+    margin-right: 10px;               
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.subscribe__button {
+    padding: 10px 20px;               
+    background-color: #f16d7f;        
+    color: #fff;                       
+    border: none;                      
+    border-radius: 5px;              
+    cursor: pointer;                   
+    transition: background-color 0.3s;
+}
 @media (max-width: 1024px) {
     .center {
         padding: 0 20px;
