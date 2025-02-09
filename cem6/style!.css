@@ -77,24 +77,41 @@ a {
 
 .offer {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .offer-item {
-    position: relative; 
-    margin: 20px; 
+    position: relative;
+    margin: 0 15px; 
+    text-align: center;
 }
-
+.offer-content {
+    position: relative;                
+}
 .img__offer {
-    display: block; 
+    width: 100%;                       
+    height: auto;                     
 }
-
+.offer-item:nth-child(4) {
+    flex: 0 0 100%;                   
+}
+.offer-item h3.subtitle, 
+.offer-item h2.title {
+    margin: 5px 0;                   
+}
+.offer-item:nth-child(4) {
+    margin-top: 30px;               
+}
 .tab {
     position: absolute; 
-    bottom: 10px; 
+    bottom: 20px; 
     left: 50%; 
     transform: translateX(-50%); 
+    color: #fff;
     padding: 5px 10px; 
     border-radius: 5px; 
     text-align: center; 
@@ -102,11 +119,13 @@ a {
 
 .title {
     font: 700 24px "Lato", sans-serif;
+    margin: 5px 0;
     color: #f16d7f;
 }
 
 .subtitle {
     font: 400 16px "Lato", sans-serif;
+    margin: 0;
     color: #fff;
 }
 .products__caption {
@@ -251,24 +270,64 @@ a {
     display: flex;                     
     align-items: center;              
     width: 100%;                      
-    max-width: 300px;                 
+    max-width: 356px;                 
 }
 .email__input {
+    max-width: 256px;
     flex: 1;                          
     padding: 10px;                    
     border: 1px solid #ccc;           
-    border-radius: 5px;               
-    margin-right: 10px;               
+    border-radius: 15px 0 0 15px;               
+    margin-right: 0;               
     background-color: rgba(255, 255, 255, 0.8);
 }
 .subscribe__button {
+    max-width: 100px;
     padding: 10px 20px;               
     background-color: #f16d7f;        
     color: #fff;                       
     border: none;                      
-    border-radius: 5px;              
+    border-radius: 0 15px 15px 0;              
     cursor: pointer;                   
     transition: background-color 0.3s;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.copyright {
+    background-color: #222224;
+    height: 79px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222224;
+    
+    
+}
+.copyright__text {
+    font: 400 16px "Lato", sans-serif;
+    color: #fbfbfb;
+}
+.copyright__icon {
+    display: flex;
+    gap: 10px;
+
+}
+.copyright__icon a {
+    display: flex;                          
+    justify-content: center;                
+    align-items: center;                    
+    width: 31px;                             
+    height: 32px;                            
+    background-color: #fff;                  
+    border-radius: 5px;                     
+}
+
+.copyright__icon img {
+    width: 10px;                             
+    height: auto;                            
 }
 @media (max-width: 1024px) {
     .center {
@@ -287,6 +346,12 @@ a {
         margin: 0 auto;             
         padding: 0 20px; 
                   
+    }
+    .promo_container {
+        width: 100%;                
+        max-width: 768px;
+        display: flex;
+        justify-content: flex-end;
     }
     .offer {
         display: grid; 
@@ -367,13 +432,17 @@ a {
         margin-bottom: 20px; 
         width: 100%; 
     }
-
+    .img__offer big {
+        width: 343px;
+        height: 111px;
+    }
     .offer-item .img__offer {
         width: 100%; 
         height: auto; 
     }
+
     .offer-item:nth-child(4) {
-        text-align: center;     
+        text-align: center;   
     }
     
     .product__items {
@@ -383,7 +452,10 @@ a {
         gap: 20px;                    
         padding: 0 16px;                
     }
-
+    .offer-item:nth-child(4) .img__offer {
+        width: 343px;      
+        height: 111px;    
+    }
     .item {
         width: 100%;                   
         max-width: 310px;              
