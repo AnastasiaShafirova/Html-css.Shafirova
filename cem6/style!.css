@@ -148,7 +148,9 @@ a {
     gap: 30px;
     grid-template-columns: repeat(3, 360px);
     justify-content: center;
+    
 }
+
 .item__text {
     font: 400 13px "Lato", sans-serif;
     color: #000;
@@ -169,6 +171,20 @@ a {
     align-items: flex-end;
     flex-direction: row;
     margin-bottom: 50px;
+    position: relative;
+}
+.product_new::after {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    content: 'new';
+    width: 35px;
+    height: 35 px;
+    background-color: #f16d7f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .button__item {
     display: flex;
