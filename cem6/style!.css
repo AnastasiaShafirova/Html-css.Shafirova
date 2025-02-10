@@ -371,6 +371,53 @@ a {
     width: 10px;                             
     height: auto;                            
 }
+.menu-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+.menu-popup {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 232px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 20px;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+}
+.menu-popup h2 {
+    margin-bottom: 20px;
+}
+.menu-popup ul {
+    list-style: none;
+    padding: 0;
+}
+.menu-popup ul li {
+    margin-bottom: 10px;
+}
+.menu-popup ul li:hover {
+    background-color: #f0f0f0;
+}
+.menu-popup button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #f16d7f; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.menu-popup button:hover {
+    background-color: #e05a72; 
+    transform: scale(1.05); 
+}
 @media (max-width: 1024px) {
     .center {
         padding: 0 20px;
