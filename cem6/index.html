@@ -171,45 +171,62 @@
           <a href="#"><img src="./img/x.svg" alt="tviter"></a>
         </div>
     </footer>
-    <!--
-    <div class="menu-popu" id="menuPopup">
+    <div class="menu-popup" id="menuPopup">
         <div class="menu-content">
             <h2>MENU</h2>
             <ul>
-                <li>
-                    MAN
+                <li><a href="#" class="pink-text">MAN</a>
                     <ul>
-                        <li>Accessories</li>
-                        <li>Bags</li>
-                        <li>Denim</li>
-                        <li>T-Shirts</li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Denim</a></li>
+                        <li><a href="#">T-Shirts</a></li>
                     </ul>
                 </li>
-                <li>WOMEN
+                <li><a href="#" class="pink-text">WOMEN</a>
                     <ul>
-                        <li>Accessories</li>
-                        <li>Jackets & Coats</li>
-                        <li>Polos</li>
-                        <li>T-Shirts</li>
-                        <li>Shirts</li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Jackets & Coats</a></li>
+                        <li><a href="#">Polos</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Shirts</a></li>
                     </ul>
                 </li>
-                <li>KIDS
-                    <url>
-                        <li>Accessories</li>
-                        <li>Jackets & Coats</li>
-                        <li>Polos</li>
-                        <li>T-Shirts</li>
-                        <li>Shirts</li>
-                        <li>Bags</li>
-                    </url>
-
+                <li><a href="#" class="pink-text">KIDS</a>
+                    <ul>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Jackets & Coats</a></li>
+                        <li><a href="#">Polos</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Bags</a></li>
+                    </ul>
                 </li>
             </ul>
-            <button class="close-button" id="closeMene">Закрыть</button>
+            <button class="close-button" id="closeMenu">Закрыть</button>
         </div>
     </div>
-    -->
-</body>
 
+
+    <script>
+        const menuButton = document.querySelector('.menu-icon'); // Ищем кнопку меню
+        const menuPopup = document.getElementById('menuPopup'); // Всплывающее меню
+        const closeMenu = document.getElementById('closeMenu'); // Кнопка закрытия меню
+
+        menuButton.addEventListener('click', () => {
+            menuPopup.style.display = 'block'; // Показываем меню
+        });
+
+        closeMenu.addEventListener('click', () => {
+            menuPopup.style.display = 'none'; // Скрываем меню
+        });
+
+        // Закрыть меню при клике вне него
+        window.addEventListener('click', (event) => {
+            if (event.target === menuPopup) {
+                menuPopup.style.display = 'none';
+            }
+        });
+    </script>
+</body>
 </html>

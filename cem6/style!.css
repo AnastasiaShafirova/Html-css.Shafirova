@@ -373,35 +373,55 @@ a {
 }
 .menu-icon:hover {
     cursor: pointer;
-    transform: scale(1.1);
-    transition: transform 0.3s;
+    transform: scale(1.1); 
+    transition: transform 0.3s; 
 }
 .menu-popup {
-    display: none;
+    display: none; 
     position: fixed;
     right: 0;
     top: 0;
-    width: 232px;
+    width: 250px;
     height: 100%;
     background-color: #fff;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
     padding: 20px;
-    overflow-y: auto;
-    transition: transform 0.3s ease;
+    overflow-y: auto; 
+    transition: transform 0.3s ease; 
 }
+
 .menu-popup h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
+
 .menu-popup ul {
     list-style: none;
     padding: 0;
 }
+
 .menu-popup ul li {
     margin-bottom: 10px;
 }
-.menu-popup ul li:hover {
-    background-color: #f0f0f0;
+
+.menu-popup ul li a {
+    color: #000; 
+    text-decoration: none; 
+}
+.menu-popup ul li > a {
+    color: #f16d7f;
+}
+.menu-popup ul li:hover > a {
+    color: #e05a72; 
+}
+.menu-popup ul ul {
+    list-style: none; 
+    padding-left: 20px; 
+}
+
+.menu-popup ul ul li a {
+    color: #000; 
+    text-decoration: none; 
 }
 .menu-popup button {
     margin-top: 20px;
