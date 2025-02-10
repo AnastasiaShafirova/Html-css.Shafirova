@@ -88,9 +88,17 @@ a {
     position: relative;
     margin: 0 15px; 
     text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 .offer-content {
     position: relative;                
+}
+.offer-content:hover {
+    transform: scale(1.05);
+}
+.offer-content:hover img {
+    transform: scale(1.1);
 }
 .img__offer {
     width: 100%;                       
@@ -150,7 +158,12 @@ a {
     justify-content: center;
     
 }
-
+.item img {
+    transition: transform 0.3s;
+}
+.item:hover img {
+    transform: scale(1.1);
+}
 .item__text {
     font: 400 13px "Lato", sans-serif;
     color: #000;
@@ -172,6 +185,10 @@ a {
     flex-direction: row;
     margin-bottom: 50px;
     position: relative;
+}
+.item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
 }
 .product_new::after {
     position: absolute;
@@ -206,6 +223,11 @@ a {
     font: 400 16px "Lato", sans-serif; 
     transition: background-color 0.3s, color 0.3s; 
     margin-bottom: 50px;
+}
+.button:hover {
+    background-color: #d273a4;
+    transform: translateY(-2px);
+    transition: background-color 0.3s, transform 0.3s;
 }
 .possibilities {
     background-color:  #222224;
@@ -305,12 +327,16 @@ a {
     border: none;                      
     border-radius: 0 15px 15px 0;              
     cursor: pointer;                   
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
     margin-left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+.subscribe__button:hover {
+    background-color: #e05a72;
+    transform: scale(1.05);
 }
 .copyright {
     background-color: #222224;
